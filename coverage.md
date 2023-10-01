@@ -1,4 +1,5 @@
-# Coverage Analysis Research Findings
+# Coverage Analysis Research Findings from previous lesson
+First of all I learned about sonarcloud and overall it's workflow, how it works and so on (as our previous task was adding quality gates and working with conditions). Morever, I used JaCoCo which was a free code coverage library for Java. Below I gave short information about each of the coverage types:
 
 ## Statement Coverage
 
@@ -22,11 +23,3 @@
 - Achieving predicate coverage is challenging but valuable for detecting subtle logic errors.
 - It helps ensure that the software handles all possible input scenarios, reducing the risk of unexpected behavior.
 - Combining branch and predicate coverage provides a more comprehensive view of code behavior.
-
-## Key Takeaways
-
-- Code coverage analysis is a crucial aspect of software testing and quality assurance.
-- Statement coverage is the simplest form of code coverage, while branch and predicate coverage provide deeper insights.
-- Achieving 100% coverage is a good goal but should be complemented with other testing techniques like mutation testing.
-- Coverage analysis should be integrated into the development process, ideally as part of continuous integration and testing.
-- Different types of coverage analysis can help uncover different classes of defects, so a combination is often advisable.

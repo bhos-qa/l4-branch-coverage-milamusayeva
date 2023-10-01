@@ -1,5 +1,6 @@
 package org.example;
 
+import java.io.File;
 import java.io.IOException;
 
 public class Calculator {
@@ -43,5 +44,17 @@ public class Calculator {
 
     public void startCalculator() throws IOException {
         Runtime.getRuntime().exec("calc.exe");
+    }
+
+    public static void vulnmethod(String userInput) throws IOException {
+        try {
+            File file = new File("vuln.txt");
+            File tempDir;
+            tempDir = File.createTempFile("vuln", null);
+            tempDir.delete();
+            tempDir.mkdir();
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
     }
 }
